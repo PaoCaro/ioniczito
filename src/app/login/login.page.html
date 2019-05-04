@@ -1,9 +1,74 @@
 <ion-header>
   <ion-toolbar>
     <ion-title class="login">Login</ion-title>
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+  <div class="container top" [hidden]="this.KeyboardEvent.isVisible">
+    <img class="logo" src="../../assets/img/stalky.png" alt="bertanto logo">
+
+    <ion-segment (ionChange)="segmentChanged($event)" value="login">
+        <ion-segment-button value="login">
+          <ion-label>Login</ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="register">
+          <ion-label>Registrar</ion-label>
+        </ion-segment-button>
+      </ion-segment>
+  </div>
+
+  <ion-slides>
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+        <span>Login</span>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="email" placeholder="E-mail" [{ngModel}]="userLogin.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="password" placeholder="Palavra-passe" [{ngModel}]="userLogin.password"></ion-input>
+        </ion-item>
+
+        <ion-button class="ion-margin-top" (click)="login()" color="light" expand="block">
+          Entrar
+        </ion-button>
+      </div>
+    </ion-slide>
+
+    <ion-slide>
+      <div class="slide-inner ion-padding">
+        <span>Criar uma conta</span>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="text" placeholder="Nome"></ion-input>
+        </ion-item>
+
+          <!--Apelido e Generoe talvez a idade xD-->
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="email" placeholder="Email" [{ngModel}]="userRegister.email"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" lines="none">
+          <ion-input type="password" placeholder="Palavra-passe" [{ngModel}]="userRegister.password"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top" (click)="register()" color="light" expand="block">
+          Registrar
+        </ion-item>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="ocean">
+    <div class="waves" [ngStyle]="{'background-position-x': wavesPosition + 'px'}"></div>
+
+    <div class="container bottom ion-text-center" [hidden]="this.KeyboardEvent.isVisible">
+      <span>Bertanto - Não tenho nada que fazer então vou lazer porque trás prazer como vestir um blazer por assim dizer vai-te cozer</span>
+      </div>
+    </div>
 </ion-content>
