@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyA-WgGmNQNey0WJoS5zfbuCSt8afzvGtGE",
-    authDomain: "bertanto-ba092.firebaseapp.com",
-    databaseURL: "https://bertanto-ba092.firebaseio.com",
-    projectId: "bertanto-ba092",
-    storageBucket: "",
-    messagingSenderId: "988940400176"
+    apiKey: 'AIzaSyA-WgGmNQNey0WJoS5zfbuCSt8afzvGtGE',
+    authDomain: 'bertanto-ba092.firebaseapp.com',
+    databaseURL: 'https://bertanto-ba092.firebaseio.com',
+    projectId: 'bertanto-ba092',
+    storageBucket: '',
+    messagingSenderId: '988940400176'
   }
 };
 
