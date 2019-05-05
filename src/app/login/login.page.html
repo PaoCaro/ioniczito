@@ -7,7 +7,7 @@
 
 <ion-content>
 
-  <div class="container top">
+  <div class="container top" [hidden]="keyboard.isVisible">
     <img class="logo" src="../../assets/img/stalky.png" alt="bertanto logo">
 
     <ion-segment (ionChange)="segmentChanged($event)" value="login">
@@ -67,8 +67,8 @@
   <div class="ocean">
     <div class="waves" [ngStyle]="{'background-position-x': wavesPosition + 'px'}"></div>
 
-    <div class="container bottom ion-text-center">
-      <span>Bertanto - Não tenho nada que fazer então vou lazer porque trás prazer como vestir um blazer por assim dizer vai-te cozer</span>
+    <div class="container bottom ion-text-center" [hidden]="keyboard.isVisible">
+      <span>Bertanto</span>
       </div>
     </div>
 </ion-content>

@@ -3,8 +3,10 @@
 }
 
 .logo {
-    text-align: center;
-    max-width: 10%;
+    max-width: 11%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
@@ -74,7 +76,6 @@ ion-slides {
         width: auto;
         height: auto;
         margin: 0 auto;
-        bottom: 20%;
         color: #fff;
         font-family: 'Gugi', cursive;
     }
