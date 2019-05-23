@@ -10,7 +10,9 @@ const routes: Routes = [
 
   { path: 'list', loadChildren: './list/list.module#ListPageModule', canActivate: [AuthGuard] },
 
-  { path: 'login', loadChildren: './login/login.module#LoginPageModule', canActivate: [LoginGuard] }
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule', canActivate: [LoginGuard] },
+
+  { path: 'countries', loadChildren: './countries/countries.module#CountriesPageModule', canActivate: [AuthGuard] }
 
 ];
 

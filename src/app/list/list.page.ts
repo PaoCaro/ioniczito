@@ -19,12 +19,25 @@ export class ListPage implements OnInit {
     'bluetooth',
     'build'
   ];
+
+  private paises = [
+    'Estados Unidos da Améria',
+    'Portugal',
+    'Medio Oriene',
+    'Russia',
+    'França',
+    'Venezuela',
+    'Africa',
+    'Mexico',
+    'Brasil',
+    'India'
+  ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
   constructor() {
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
+        title: this.paises[i - 1],
+        note: 'País #' + i,
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });
     }
