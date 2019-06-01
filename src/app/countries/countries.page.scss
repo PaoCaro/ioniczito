@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
-.paises {
-
+.ini {
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 35px;
+    text-align: center;
 }
 
+.paises { }
+
+img:hover {
+    transition: 2s all;
+    opacity: 50%;
+}
 .pais {
     width: 51%;
 }

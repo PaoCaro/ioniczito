@@ -20,17 +20,17 @@ export class ListPage implements OnInit {
     'build'
   ];
 
-  private paises = [
-    'Estados Unidos da Améria',
+  private países = [
+    'Estados Unidos da América',
     'Portugal',
-    'Medio Oriene',
-    'Russia',
+    'Médio Oriente',
+    'Rússia',
     'França',
     'Venezuela',
-    'Africa',
-    'Mexico',
+    'África',
+    'México',
     'Brasil',
-    'India'
+    'Índia'
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
   constructor() {

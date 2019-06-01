@@ -1,9 +1,13 @@
 <ion-header>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
   <ion-toolbar>
     <ion-icon class="ceta" name="arrow-back" expand="full" routerLink="/home"></ion-icon>
-    <ion-title>Paises</ion-title>
+    <ion-title class="ini">Paises</ion-title>
+    <ion-searchbar placeholder="Pesquisar Países" [value]="lpaises"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
+
+<br>
 
 <ion-content>
   <ion-card class="paises">
@@ -12,9 +16,7 @@
       <ion-img class="pais" src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"></ion-img>
     </ion-col>
     <ion-col>
-      <ion-card-subtitle class="titulo"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum a augue
-        a
-        condimentum. Curabitur massa mi, varius vitae. </ion-card-subtitle>
+      <ion-card-subtitle class="titulo"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dictum a augue condimentum. Curabitur massa mi, varius vitae. </ion-card-subtitle>
     </ion-col>
     <hr>
     <br>
