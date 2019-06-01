@@ -10,21 +10,22 @@
 </ion-header>
 
 <ion-content>
-    <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Para começar</ion-card-subtitle>
-        <ion-card-title>Bem-Vindo a Bertanto!</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Não tenho nada que fazer então vou lazer porque trás prazer como vestir um blazer por assim dizer vai-te cozer</p>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Produtos</ion-label>
-      </ion-list-header>
-    </ion-list>
+  <ion-card class="welcome-card">
+    <ion-img src="/assets/shapes.svg"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>Para começar</ion-card-subtitle>
+      <ion-card-title>Bem-Vindo a Bertanto!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Não tenho nada que fazer então vou lazer porque trás prazer como vestir um blazer por assim dizer vai-te cozer
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Produtos</ion-label>
+    </ion-list-header>
+  </ion-list>
 </ion-content>
 <ion-footer>
   <ion-toolbar>
@@ -32,11 +33,14 @@
       <ion-row>
         <ion-col size="6">
           <ion-button (click)="logout()" color="danger" expand="block">
+            <ion-icon name="log-out"></ion-icon>
             Sair
           </ion-button>
-          <ion-button expand="full" routerLink="/countries">
-          Países
-          </ion-button>
+        </ion-col>
+        <ion-col size="6">
+            <ion-button color="success" expand="full" routerLink="/countries">
+              Países
+            </ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
