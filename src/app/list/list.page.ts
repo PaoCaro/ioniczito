@@ -36,7 +36,7 @@ export class ListPage implements OnInit {
   constructor() {
     for (let i = 1; i < 11; i++) {
       this.items.push({
-        title: this.paises[i - 1],
+        title: this.países[i - 1],
         note: 'País #' + i,
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });

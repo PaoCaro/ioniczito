@@ -12,9 +12,16 @@ img:hover {
 }
 .pais {
     width: 51%;
+    position: relative;
+    left: 17px;
 }
 
 .titulo {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+    position: relative;
+    left: 17px;
 }
